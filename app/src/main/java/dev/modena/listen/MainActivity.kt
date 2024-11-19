@@ -57,15 +57,20 @@ class MainActivity : ComponentActivity(), Application.ActivityLifecycleCallbacks
     override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {
         if (activity is MainActivity2) Log.i(TAG,"onActivityCreated")
     }
+
     override fun onActivityResumed(activity: Activity) {
         if (activity is MainActivity2) Log.i(TAG,"onActivityResumed")
     }
+
     override fun onActivityPaused(activity: Activity) {
+
         if (activity is MainActivity2) Log.i(TAG,"onActivityPaused")
     }
+
     override fun onActivitySaveInstanceState(activity: Activity, outState: Bundle) {
         if (activity is MainActivity2) Log.i(TAG,"onActivitySaveInstanceState")
     }
+
     override fun onActivityDestroyed(activity: Activity) {
         if (activity is MainActivity2) Log.i(TAG,"onActivityDestroyed")
     }
